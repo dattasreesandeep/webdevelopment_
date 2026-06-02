@@ -1,0 +1,33 @@
+ <!-- JavaScript Program to Sort Words in Alphabetical Order  -->
+
+ <html>
+<head>
+    <title>Sort Words Alphabetically</title>
+</head>
+<body>
+
+    <label>Enter Words:</label>
+    <input type="text" id="words"><br><br>
+
+    <button onclick="sortWords()">Sort</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function sortWords() {
+
+            var str = document.getElementById("words").value;
+
+            var arr = str.split(" ");
+
+            arr.sort();
+
+            document.getElementById("result").innerHTML =
+                arr.join(" ");
+        }
+
+    </script>
+
+</body>
+</html>

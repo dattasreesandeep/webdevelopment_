@@ -1,0 +1,42 @@
+<!-- JavaScript Program to Check Whether a String is Palindrome or Not   -->
+
+
+<html>
+<head>
+    <title>Palindrome String</title>
+</head>
+<body>
+
+    <label>Enter a String:</label>
+    <input type="text" id="str"><br><br>
+
+    <button onclick="checkPalindrome()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function checkPalindrome() {
+
+            var str = document.getElementById("str").value;
+
+            var reversed = "";
+
+            for (var i = str.length - 1; i >= 0; i--) {
+                reversed = reversed + str[i];
+            }
+
+            if (str == reversed) {
+                document.getElementById("result").innerHTML =
+                    "Palindrome";
+            }
+            else {
+                document.getElementById("result").innerHTML =
+                    "Not Palindrome";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

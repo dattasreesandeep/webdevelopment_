@@ -1,0 +1,26 @@
+ <!-- JavaScript Program to Convert Kilometers to Miles  -->
+
+ <html>
+<head>
+    <title>Kilometers to Miles</title>
+</head>
+<body>
+
+    <input type="text" id="km" placeholder="Enter Kilometers">
+    <button onclick="convert()">Convert</button>
+
+    <p id="result"></p>
+
+    <script>
+        function convert() {
+            var km = Number(document.getElementById("km").value);
+
+            var miles = km * 0.621371;
+
+            document.getElementById("result").innerHTML =
+                "Miles = " + miles;
+        }
+    </script>
+
+</body>
+</html>

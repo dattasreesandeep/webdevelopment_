@@ -1,0 +1,51 @@
+ <!-- JavaScript Program to Print All Prime Numbers in an Interval   -->
+
+ <html>
+<head>
+    <title>Prime Numbers in Interval</title>
+</head>
+<body>
+
+    <input type="text" id="start" placeholder="Start Number"><br><br>
+    <input type="text" id="end" placeholder="End Number"><br><br>
+
+    <button onclick="findPrimes()">Find Primes</button>
+
+    <p id="result"></p>
+
+    <script>
+        function findPrimes() {
+
+            var start = Number(document.getElementById("start").value);
+            var end = Number(document.getElementById("end").value);
+
+            var output = "";
+
+            for (var num = start; num <= end; num++) {
+
+                var prime = true;
+
+                if (num <= 1) {
+                    prime = false;
+                } else {
+
+                    for (var i = 2; i < num; i++) {
+                        if (num % i == 0) {
+                            prime = false;
+                            break;
+                        }
+                    }
+                }
+
+                if (prime) {
+                    output += num + " ";
+                }
+            }
+
+            document.getElementById("result").innerHTML =
+                "Prime Numbers: " + output;
+        }
+    </script>
+
+</body>
+</html>

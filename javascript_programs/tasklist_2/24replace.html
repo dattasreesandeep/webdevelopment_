@@ -1,0 +1,31 @@
+ <!-- JavaScript Program to Replace Characters of a String -->
+
+ <html>
+<head>
+    <title>Replace Character</title>
+</head>
+<body>
+
+    <label>Enter a String:</label>
+    <input type="text" id="str"><br><br>
+
+    <button onclick="replaceChar()">Replace</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function replaceChar() {
+
+            var str = document.getElementById("str").value;
+
+            var newStr = str.replace("a", "@");
+
+            document.getElementById("result").innerHTML =
+                newStr;
+        }
+
+    </script>
+
+</body>
+</html>

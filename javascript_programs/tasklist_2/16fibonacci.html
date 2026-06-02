@@ -1,0 +1,37 @@
+ <!-- JavaScript Program to Print the Fibonacci Sequence  -->
+
+<html>
+<head>
+    <title>Fibonacci Sequence</title>
+</head>
+<body>
+
+    <input type="text" id="num">
+    <button onclick="fib()">Generate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function fib() {
+            let n = Number(document.getElementById("num").value);
+
+            let a = 0;
+            let b = 1;
+            let result = "";
+
+            for (let i = 1; i <= n; i++) {
+
+                result += a+" " ;
+
+                let c = a + b; 
+                a = b;
+                b = c;
+            }
+
+            document.getElementById("result").innerHTML =
+                "Fibonacci Series: " + result;
+        }
+    </script>
+
+</body>
+</html>

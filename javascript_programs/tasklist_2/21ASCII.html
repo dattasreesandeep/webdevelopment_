@@ -1,0 +1,32 @@
+ <!-- JavaScript Program to Find ASCII Value of Character   -->
+
+
+ <html>
+<head>
+    <title>ASCII Value of Character</title>
+</head>
+<body>
+
+    <label>Enter a Character:</label>
+    <input type="text" id="char" maxlength="1"><br><br>
+
+    <button onclick="findASCII()">Find ASCII Value</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function findASCII() {
+
+            var ch = document.getElementById("char").value;
+
+            var ascii = ch.charCodeAt(0);
+
+            document.getElementById("result").innerHTML =
+                "ASCII Value = " + ascii;
+        }
+
+    </script>
+
+</body>
+</html>

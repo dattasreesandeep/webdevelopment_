@@ -1,0 +1,24 @@
+<!-- JavaScript Program to Find the Square Root  -->
+
+<html>
+    <head>
+        <title>squares</title>
+    </head>
+    <body>
+        
+        <input type="text" id = "num">
+        <button onclick="squares()">squares</button>
+        <p id = "result"></p>
+
+        <script>
+            function squares(){
+
+    
+        var a = Number(document.getElementById("num").value);
+        var sqr = a**2
+        document.getElementById("result").innerHTML = "squares: "+sqr;
+            }
+
+        </script>
+    </body>
+</html>

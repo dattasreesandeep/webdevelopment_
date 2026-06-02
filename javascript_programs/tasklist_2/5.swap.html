@@ -1,0 +1,28 @@
+ <!-- JavaScript Program to Swap Two Variables  -->
+
+ <html>
+    <head>
+        <title>Swap</title>
+    </head>
+    <body>
+        <input type="text" id="a" placeholder="Enter value 1st">
+        <input type="text" id ="b" placeholder="Enter Value 2nd">
+
+        <button onclick="Swap()">Enter</button>
+        <p id="result"></p>
+
+        <script>
+            function Swap(){
+                var a = Number(document.getElementById("a").value);
+                var b = Number(document.getElementById("b").value);
+
+            var temp = a;
+            a = b;
+            b = temp;
+                
+
+                document.getElementById("result").innerHTML = "Swap of two numbers: <br>"+"1st one: "+ a +"<br>2nd one: "+b;
+            }        
+            </script>
+    </body>
+</html>

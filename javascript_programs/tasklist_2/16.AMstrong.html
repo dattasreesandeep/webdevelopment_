@@ -1,0 +1,56 @@
+<!-- JavaScript Program to Find Armstrong Number in an Interval  -->
+
+
+<html>
+<head>
+    <title>Armstrong Numbers in an Interval</title>
+</head>
+<body>
+
+    <label>Enter Start Number:</label>
+    <input type="number" id="start"><br><br>
+
+    <label>Enter End Number:</label>
+    <input type="number" id="end"><br><br>
+
+    <button onclick="findArmstrong()">Find</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function findArmstrong() {
+
+            var start = Number(document.getElementById("start").value);
+            var end = Number(document.getElementById("end").value);
+
+            var output = "";
+
+            for (var i = start; i <= end; i++) {
+
+                var num = i;
+                var sum = 0;
+
+                var digits = num.toString().length;
+
+                while (num > 0) {
+
+                    var rem = num % 10;
+
+                    sum = sum + (rem ** digits);
+
+                    num = Math.floor(num / 10);
+                }
+
+                if (sum == i) {
+                    output = output + i + "<br>";
+                }
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+
+    </script>
+
+</body>
+</html>

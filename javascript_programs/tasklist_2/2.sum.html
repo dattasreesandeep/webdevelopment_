@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <input type = "text" id = "num1" ><br><br>
+        <input type="text" id="num2"><br><br>
+        <button onclick="addition()">Addition</button>
+        <p id="result"></p>
+
+        <script>
+            function addition(){
+                var a = Number(document.getElementById("num1").value);
+                var b = Number(document.getElementById("num2").value);
+
+                var sum = a+b;
+                document.getElementById("result").innerHTML = "sum = "+(a+b);
+            }
+        </script>
+    </body>
+</html> 
