@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Registration Form</title>
+
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Bank Account Registration</h1>
+
+    <form id="bankForm">
+
+        <!-- NAME -->
+
+        <div class="input-group">
+
+            <label>Full Name</label>
+
+            <input 
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+            >
+
+            <div class="hint-box">
+                Name should contain only alphabets and minimum 3 characters
+            </div>
+
+            <small id="nameError"></small>
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div class="input-group">
+
+            <label>Email</label>
+
+            <input
+                type="text"
+                id="email"
+                placeholder="example@gmail.com"
+            >
+
+            <div class="hint-box">
+                Enter valid email format
+            </div>
+
+            <small id="emailError"></small>
+
+        </div>
+
+
+        <!-- PHONE -->
+
+        <div class="input-group">
+
+            <label>Phone Number</label>
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Enter 10 digit number"
+            >
+
+            <div class="hint-box">
+                Phone number must contain exactly 10 digits
+            </div>
+
+            <small id="phoneError"></small>
+
+        </div>
+
+
+        <!-- DOB -->
+
+        <div class="input-group">
+
+            <label>Date of Birth</label>
+
+            <input
+                type="date"
+                id="dob"
+            >
+
+            <div class="hint-box">
+                Age must be 18 years or above
+            </div>
+
+            <small id="dobError"></small>
+
+        </div>
+
+
+        <!-- GENDER -->
+
+        <div class="input-group">
+
+            <label>Gender</label>
+
+            <select id="gender">
+
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+
+            </select>
+
+            <small id="genderError"></small>
+
+        </div>
+
+
+        <!-- ACCOUNT TYPE -->
+
+        <div class="input-group">
+
+            <label>Account Type</label>
+
+            <select id="accountType">
+
+                <option value="">Select Account</option>
+                <option>Savings</option>
+                <option>Current</option>
+
+            </select>
+
+            <small id="accountError"></small>
+
+        </div>
+
+
+        <!-- USERNAME -->
+
+        <div class="input-group">
+
+            <label>Username</label>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+            >
+
+            <div class="hint-box">
+                Username should not contain spaces
+            </div>
+
+            <small id="usernameError"></small>
+
+        </div>
+
+
+        <!-- PASSWORD -->
+
+        <div class="input-group">
+
+            <label>Password</label>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                >
+
+                <button type="button" id="togglePassword">
+                    Show
+                </button>
+
+            </div>
+
+            <div class="hint-box">
+                Password must contain:
+                <br>
+                • 1 Uppercase Letter
+                <br>
+                • 1 Lowercase Letter
+                <br>
+                • 1 Number
+                <br>
+                • 1 Special Character
+                <br>
+                • Minimum 8 Characters
+            </div>
+
+            <small id="passwordError"></small>
+
+        </div>
+
+
+        <!-- CONFIRM PASSWORD -->
+
+        <div class="input-group">
+
+            <label>Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm password"
+            >
+
+            <small id="confirmError"></small>
+
+        </div>
+
+
+        <!-- SUBMIT BUTTON -->
+
+        <button type="submit" class="btn">
+            Create Account
+        </button>
+
+    </form>
+
+</div>
+
+<script src="account.js"></script>
+
+</body>
+</html>

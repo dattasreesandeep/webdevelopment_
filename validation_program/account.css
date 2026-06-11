@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#e5e5e5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#333;
+}
+
+.input-group input,
+.input-group select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+    font-size:14px;
+}
+
+.input-group input:focus,
+.input-group select:focus{
+    border-color:gray;
+}
+
+.hint-box{
+    background:#f1f1f1;
+    color:#555;
+    padding:8px;
+    border-left:4px solid gray;
+    margin-top:5px;
+    border-radius:4px;
+    font-size:13px;
+}
+
+small{
+    color:red;
+    font-size:13px;
+}
+
+.password-box{
+    display:flex;
+}
+
+.password-box input{
+    flex:1;
+}
+
+.password-box button{
+    width:80px;
+    border:none;
+    background:#555;
+    color:white;
+    cursor:pointer;
+    border-radius:0px 5px 5px 0px;
+}
+
+.password-box button:hover{
+    background:#333;
+}
+
+.btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#444;
+    color:white;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#222;
+}
